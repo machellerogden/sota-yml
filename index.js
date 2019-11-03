@@ -17,7 +17,7 @@ const identities = {
     fail: nonSerializable,
     next: nonSerializable,
     end: nonSerializable,
-    '': nonSerializable,
+    '@': nonSerializable,
     dupe: nonSerializable,
     '^': nonSerializable,
     parallel: nonSerializable,
@@ -25,7 +25,7 @@ const identities = {
     'try': nonSerializable,
     retry: nonSerializable,
     params: nonSerializable,
-    '@': nonSerializable
+    map: nonSerializable
 };
 
 function createTag(name, reader) {
@@ -47,8 +47,8 @@ YAML.defaultOptions.customTags = Object.entries(readers).map(([ name, reader ]) 
 
 module.exports = YAML;
 
-//const testInput = '!params bar';
-//const testData = YAML.parse(testInput);
-//const testString = YAML.stringify(testData);
-//console.log(testData);
-//console.log(testString);
+const testInput = '!^ bar';
+const testData = YAML.parse(testInput);
+const testString = YAML.stringify(testData);
+console.log(testData);
+console.log(testString);
