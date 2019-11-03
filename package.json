@@ -1,0 +1,29 @@
+{
+  "name": "sota-yml",
+  "version": "0.0.0",
+  "description": "argv->state-machine",
+  "bin": {
+    "sota": "index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "ava test/*.spec.js",
+    "watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/machellerogden/sota-yml.git"
+  },
+  "keywords": [],
+  "author": "Mac Heller-Ogden",
+  "license": "MIT",
+  "dependencies": {
+    "is-ci": "2.0.0",
+    "yaml": "1.7.2",
+    "streamface": "0.0.0"
+  },
+  "devDependencies": {
+    "ava": "^2.2.0",
+    "sinon": "^7.3.2"
+  }
+}
