@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "argv->state-machine",
   "bin": {
-    "sota": "index.js"
+    "sota-yml": "index.js"
   },
   "main": "index.js",
   "scripts": {
@@ -18,9 +18,10 @@
   "author": "Mac Heller-Ogden",
   "license": "MIT",
   "dependencies": {
+    "async-stream-generator": "^1.0.3",
     "is-ci": "2.0.0",
-    "yaml": "1.7.2",
-    "streamface": "0.0.0"
+    "streamface": "0.0.3",
+    "yaml": "1.7.2"
   },
   "devDependencies": {
     "ava": "^2.2.0",
